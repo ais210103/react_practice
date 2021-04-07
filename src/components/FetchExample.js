@@ -24,10 +24,13 @@ export default function FetchExample(props) {
   //     console.log("fetched", data);
   //     setList(data);
   //   }, []);
-
-  return (
-    <div>
-      <SelectBox data={list}></SelectBox>
-    </div>
-  );
+  if (list.length) {
+    return (
+      <div>
+        <SelectBox data={list}></SelectBox>
+      </div>
+    );
+  } else {
+    return null;
+  }
 }
