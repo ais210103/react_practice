@@ -7,6 +7,7 @@ import InputField from "./components/InputField";
 import ColorBox from "./components/ColorBox";
 import LeftBox from "./components/LeftBox";
 import RightBox from "./components/RightBox";
+import FetchExample from "./components/FetchExample";
 
 function App() {
   const [color, setColor] = useState(null);
@@ -24,8 +25,11 @@ function App() {
         alignItems: "center",
       }}
     >
-      <LeftBox></LeftBox>
-      <RightBox></RightBox>
+      <FetchExample></FetchExample>
+
+      {/* <LeftBox></LeftBox>
+      <RightBox></RightBox> */}
+
       {/* <div>
         <InputField onchange={onchange}></InputField>
       </div>
