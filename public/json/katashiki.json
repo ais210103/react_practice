@@ -26,5 +26,12 @@
     "sousakikou": "ばね",
     "katashiki": "CBA-06",
     "gas": "0.5"
+  },
+  {
+    "code": "5",
+    "kikishurui": "ガス遮断器(GIS)",
+    "sousakikou": "ばね",
+    "katashiki": "CBA-05",
+    "gas": "0.6"
   }
 ]

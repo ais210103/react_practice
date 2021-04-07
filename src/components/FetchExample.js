@@ -24,6 +24,7 @@ export default function FetchExample(props) {
   //     console.log("fetched", data);
   //     setList(data);
   //   }, []);
+
   if (list.length) {
     return (
       <div>
