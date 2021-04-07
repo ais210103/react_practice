@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./css/rightbox.css";
+import styles from "./css/rightbox.module.css";
 
 export default function RightBox(props) {
-  return <div className="box"></div>;
+  return <div className={styles.box}></div>;
 }

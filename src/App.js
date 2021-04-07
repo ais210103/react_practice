@@ -25,10 +25,10 @@ function App() {
         alignItems: "center",
       }}
     >
-      <FetchExample></FetchExample>
+      {/* <FetchExample></FetchExample> */}
 
-      {/* <LeftBox></LeftBox>
-      <RightBox></RightBox> */}
+      <LeftBox></LeftBox>
+      <RightBox></RightBox>
 
       {/* <div>
         <InputField onchange={onchange}></InputField>

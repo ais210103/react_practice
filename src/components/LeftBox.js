@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./css/leftbox.css";
+import styles from "./css/leftbox.module.css";
 
 export default function LeftBox(props) {
-  return <div className="box"></div>;
+  return <div className={styles.box}></div>;
 }
