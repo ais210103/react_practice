@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import SelectBox from "./components/SelectBox";
+import CountBox from "./components/CountBox";
+import React, { useState, useEffect } from "react";
+import InputField from "./components/InputField";
+import ColorBox from "./components/ColorBox";
+import LeftBox from "./components/LeftBox";
+import RightBox from "./components/RightBox";
 
 function App() {
+  const [color, setColor] = useState(null);
+  const onchange = (e) => {
+    console.log(e.currentTarget.value);
+    setColor(e.currentTarget.value);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        display: "flex",
+        margin: "5rem auto",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <LeftBox></LeftBox>
+      <RightBox></RightBox>
+      {/* <div>
+        <InputField onchange={onchange}></InputField>
+      </div>
+      <div>
+        <ColorBox color={color}></ColorBox>
+      </div> */}
     </div>
   );
 }
